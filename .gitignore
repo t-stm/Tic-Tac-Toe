@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# Except these files
+!tic_tac_toe.js
+!README.md
+!.gitignore
