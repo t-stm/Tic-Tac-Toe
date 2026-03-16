@@ -246,7 +246,7 @@ function executeTurn(currentSquaresState, computerPriority) {
 
   let computerFirst = computerPriority ?
     (completedPlayerTurns >= completedComputerTurns) :
-    (completedPlayerTurns > completedComputerTurns); // if one contestant has completed fewer terms, they always get a turn. If both constants have completed an equal number of turns, the truthiness of computerPriority determines which one goes first.
+    (completedPlayerTurns > completedComputerTurns); // if one contestant has completed fewer turns, they always get a turn. If both constants have completed an equal number of turns, the truthiness of computerPriority determines which one goes first.
 
   if (computerFirst) {
     markSquare(computerChooses, currentSquaresState);
@@ -270,8 +270,8 @@ function determineGame(currentSquaresState) {
     let markSquare2 = currentSquaresState[requiredSquare2];
     let markSquare3 = currentSquaresState[requiredSquare3];
 
-    if (markSquare1 === markSquare2 && markSquare2 === markSquare3) { // winning condtion: if all three squares specified in the scenario criteria are claimed by the same player
-      return markSquare1; // return the mark of the player who has claimed the winning squares
+    if (markSquare1 === markSquare2 && markSquare2 === markSquare3) { // winning condition: if all three squares specified in the scenario criteria are claimed by the same player
+      return markSquare1; // return the marker of the player who has claimed the winning squares
     }
   }
 
